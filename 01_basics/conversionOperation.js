@@ -44,6 +44,7 @@ console.log(booleanValue)
 // 1 -> true 0-> false "" -> false "abdjgj"->true 
 */
 
+/*
 // we can also use other classes like Strings
 
 let namevar = 99
@@ -54,3 +55,63 @@ console.log(StringName) // simply return number so check type of
 console.log(typeof StringName) // yes now this thing is converted to a string
 console.log(Stringbv)
 console.log(typeof Stringbv)
+*/
+
+//OPERATIONS
+
+/* NEGATIVES
+let score = 5
+let negscore = -score
+console.log(negscore); // -5
+// 
+*/
+
+// console.log(1+2);
+//console.log(1-2)
+//    console.log(1*2)
+//  console.log(1/2)
+//console.log(1%2)
+//console.log(12**2)
+
+
+// should not do these confusion things
+ /*
+console.log("1" + 2); //12
+console.log(1 + "2"); //12
+console.log("1" + 2 + 2); //122
+console.log(1 + 2 + "2"); //32 , if string at last then preceeding terms are calculated else everyhting is considered as a string like in above example
+*/
+
+//again some example of confusion conversion
+
+//console.log(true); //true
+//console.log(+true); //1
+//console.log(true+); // error not allowed
+//console.log(+""); // empty string gives 0 on boolean after plus also 1
+
+//Assignment operator
+/*
+let num1 , num2 , num3
+
+num1 = num2 = num3 = 2+2 // not good , increase readability
+
+let gamecounter = 100
+//gamecounter++; postfix 
+++gamecounter;
+console.log(gamecounter);
+*/
+
+//mdn prefix and postfix:
+
+let x = 3;
+const y = x++;
+
+console.log(`x: ${x} , y; ${y}`);
+// x=4 , y=3
+
+
+let a = 3;
+const b = ++a;
+
+console.log(`a: ${a} , b; ${b}`);
+// a=4 , b=4
