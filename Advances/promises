@@ -50,7 +50,7 @@ const promiseFour = new Promise(function(resolve, reject){
 }).then((username) => {//thus we are using chaining- uprr ki value nye connection mein
     console.log(username);
 }).catch(function(error){
-    console.log(error);//catching the error : if above value of error will be false it will give error
+    console.log(error);//catching the error : if above value of error will be false it will not give error.
 }).finally(() => console.log("The promise is either resolved or rejected"))
 
 
@@ -65,14 +65,14 @@ const promiseFive = new Promise(function(resolve, reject){
         }
     }, 1000)
 });
-
+//handling by async and await
 async function consumePromiseFive(){
     try {
-        const response = await promiseFive
+        const response = await promiseFive // it is an object therefore write its reference not execn.
         console.log(response);
     } catch (error) {
         console.log(error);
-    }
+    }//as they can not directly handle errors , they assume that the value will always come and they can have it , thus we are keeping it all in try catch block
 }
 
 consumePromiseFive()
