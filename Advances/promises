@@ -75,7 +75,7 @@ async function consumePromiseFive(){
     }//as they can not directly handle errors , they assume that the value will always come and they can have it , thus we are keeping it all in try catch block
 }
 
-consumePromiseFive()
+consumePromiseFive() // another way
 
 // async function getAllUsers(){
 //     try {
